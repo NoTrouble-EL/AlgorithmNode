@@ -5,6 +5,9 @@ import cn.xiaohupao.sort.swap.Swap;
 /**
  * @Author: Wukun
  * @Date: 2021/8/10下午2:58
+ *
+ * time:O(n^{1.3} ~ O(n^{7/6}))
+ * space:O(1)
  */
 public class ShellSort {
 
