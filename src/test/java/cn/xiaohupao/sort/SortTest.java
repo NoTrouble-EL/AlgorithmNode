@@ -2,7 +2,10 @@ package cn.xiaohupao.sort;
 
 import cn.xiaohupao.sort.bubble.BubbleSort;
 import cn.xiaohupao.sort.insert.InsertSort;
+import cn.xiaohupao.sort.merge.MergeSort;
+import cn.xiaohupao.sort.quick.QuickSort;
 import cn.xiaohupao.sort.selection.SelectionSort;
+import cn.xiaohupao.sort.shell.ShellSort;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -30,6 +33,21 @@ public class SortTest {
     @Test
     public void insertSort(){
         InsertSort.insertSort(needSortArr);
+    }
+
+    @Test
+    public void shellSort(){
+        ShellSort.shellSort(needSortArr);
+    }
+
+    @Test
+    public void quickSort(){
+        QuickSort.quickSort(needSortArr);
+    }
+
+    @Test
+    public void mergeSort(){
+        MergeSort.mergeSort(needSortArr);
     }
 
     @Before
